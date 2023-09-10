@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                build() // Call the shared library function for the "Build" stage
+                build(job: 'CICD') // Call the shared library function for the "Build" stage
             }
         }
 
